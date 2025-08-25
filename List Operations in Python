@@ -1,0 +1,31 @@
+# Practical 19: Demonstration of List operations
+
+print('Practical 19: List operations')
+
+# Create a list of fruits
+fruits = ["apple", "banana", "cherry"]
+print("Initial list:", fruits)
+
+# Append a new element 'orange' at the end of the list
+fruits.append("orange")
+print("After appending 'orange':", fruits)
+
+# Append another element 'grape' at the end of the list
+fruits.append("grape")
+print("After appending 'grape':", fruits)
+
+# Remove 'banana' from the list
+fruits.remove("banana")
+print("After removing 'banana':", fruits)
+
+# Try to remove 'kiwi' (check if it exists before removing)
+item_to_remove = "kiwi"
+if item_to_remove in fruits:
+    fruits.remove(item_to_remove)
+    print(f"After removing '{item_to_remove}':", fruits)
+else:
+    # If 'kiwi' is not in the list, show a message
+    print(f"'{item_to_remove}' not found in the list. Nothing removed.")
+
+# Final state of the list
+print("Final list:", fruits)
