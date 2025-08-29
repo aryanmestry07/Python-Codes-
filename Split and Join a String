@@ -1,0 +1,14 @@
+print('Split and Join a string')
+
+# Function to split a string into words and then join them with '-'
+def split_join(text):
+    words = text.split()       # Split the string into a list of words
+    new = '-'.join(words)      # Join the words with a hyphen
+    return new
+
+# Example usage
+msg = 'Python is fun'
+result = split_join(msg)
+
+print(result)   # Output: Python-is-fun
+print()
