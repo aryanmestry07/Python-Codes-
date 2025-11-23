@@ -1,0 +1,11 @@
+string = 'programming'
+
+res = ""  
+
+# Loop through each character of the original string
+for i in string:
+    # Add character only if it's not already added earlier
+    if i not in res:
+        res = res + i
+
+print(f"String after removing the Duplicates : {res}")
