@@ -1,0 +1,11 @@
+my_list = ['Aryan', 123, 'Mestry', 456, 'hello', 2220, 'world']
+
+count = 0   
+
+# Loop through each element of the list
+for i in my_list:
+    # Check if the current element is a string
+    if type(i) == str:
+        count += 1   # increment counter when a string is found
+
+print(f"Number of Strings in the List are : {count}")
